@@ -19,12 +19,12 @@
             <h1 class="text-center text-white">Weather Dashboard</h1>
         </div>
         <!-- Merges search bar with nav bar when screen is small -->
-        <section class="navbar navbar-light my-4 d-sm-none">
+        <!-- <section class="navbar navbar-light my-4 d-sm-none">
             <form class="form-inline">
                 <input class="form-control mr-sm-2" type="search" placeholder="City" aria-label="Search">
                 <button class="btn btn-outline-info my-2 my-sm-0 search" type="submit"> Search</button>
             </form>
-        </section>
+        </section> -->
 
         <!-- Search results will appear here -->
         <ul class="list-group d-block d-sm-none nav"></ul>
@@ -36,8 +36,8 @@
                 <!-- search bar -->
                 <section class="navbar navbar-light my-4 .d-none .d-sm-block ">
                     <form class="form-inline">
-                        <input class="form-control mr-sm-2" type="search" placeholder="City" aria-label="Search">
-                        <button class="btn btn-outline-info my-2 my-sm-0 search" type="submit"> Search</button>
+                        <input id="user-input" class="form-control mr-sm-2" type="search" placeholder="City" aria-label="Search">
+                        <button id="search-button" class="btn btn-outline-info my-2 my-sm-0 search"> Search</button>
                     </form>
                 </section> 
                 <!-- where search results will appear -->
@@ -50,12 +50,12 @@
                 
                 <div class="container">
                     <!-- Today's forcast -->
-                    <section id="today-forcast">
+                    <!-- <section id="today-forcast">
                         <h2 class="city date0"></h2>
                         <p class="temp"></p>
                         <p class="humidity"></p>
                         <p class="wind"></p>
-                        <p class="uvIndex"></p>
+                        <p class="uvIndex"></p> -->
                     </section>
 
                     <!-- 5 day forcast section-->
