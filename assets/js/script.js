@@ -1,8 +1,8 @@
-// http://api.openweathermap.org/data/2.5/forecast?q=Chicago&units=imperial&appid=6658bc2aa5781c0084a75b25ca5febd7
-
 
 //onclick of search button
 $("#search-button").click(function(event) {
+    // save task to localStorage
+    
     //prevents page from reloading
     event.preventDefault();
       //grab value of input field
@@ -109,10 +109,10 @@ $("#search-button").click(function(event) {
         });
     
 })
-// save task to localStorage
-$("#search-button").on("click", function () {
-    var text = $("#user-input").val(); 
-    localStorage.setItem(text);
+  // save task to localStorage
+  $(".saveBtn").on("click", function () {
+  var text = $("#user-input").val(); 
+  localStorage.setItem(time, text);
 });
 $("#user-input").val(localStorage.getItem("#user-input"));
 
