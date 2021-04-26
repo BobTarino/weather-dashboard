@@ -9,6 +9,7 @@ $("#search-button").click(function(event) {
       var inputCity = $("#user-input").val(); 
       var searchURL = "http://api.openweathermap.org/data/2.5/forecast?q=" + inputCity + "&units=imperial&appid=6658bc2aa5781c0084a75b25ca5febd7"
       var currentURL = "http://api.openweathermap.org/data/2.5/weather?q=" + inputCity + "&units=imperial&appid=6658bc2aa5781c0084a75b25ca5febd7"
+
       // fetch data
       // API request for current weather
       fetch(currentURL)
@@ -23,7 +24,10 @@ $("#search-button").click(function(event) {
             $(".current-wind").text("Wind: " + curWindText + " MPH");
             var curHumidText =  JSON.stringify(response.main.humidity);
             $(".current-humidity").text("Humid: " + curHumidText + " %"); 
+            
+
         });
+
       // API request for 5 day forecast
       fetch(searchURL)
         .then(function(response) {
@@ -83,11 +87,7 @@ $("#search-button").click(function(event) {
     
 })
 
- 
-
-
-//fecth data 
-
+           
 
 
 
