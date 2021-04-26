@@ -3,7 +3,6 @@
 Description:
 By fetching data from the server-side API, OpenWeather, I designed an application that displays the current temperature, humidity, wind speed, and UV index, as well as a five-day forecast. Using an if statement, the card containing current weather data changes color. 
 
-*Work In Progress
 
 Screen Shots:
 ![Screen Shot 2021-04-25 at 11 08 47 PM](https://user-images.githubusercontent.com/79377937/116027849-83c53780-a61b-11eb-9fe5-0c5f01c98c46.png)
