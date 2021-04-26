@@ -31,6 +31,7 @@ $(document).ready(function() {
                     $("<img>").appendTo(".current-icon").attr("src", "https://api.openweathermap.org/data/2.5/weather?q=" + inputCity + "&appid=6658bc2aa5781c0084a75b25ca5febd7.png");
                     // UV Index API Call
                     let uvURL = `https://api.openweathermap.org/data/2.5/uvi?appid=8a9c8778f33ed43d7abdebc8755bbe26&lat=${lat}&lon=${lon}`;
+                    localStorage.setItem("#user-input", inputCity);
                         
                     $.ajax({
                         url: uvURL,
@@ -50,8 +51,6 @@ $(document).ready(function() {
                                 $("#day-0").attr("class", "uvIndex btn btn-danger col-9 m-3");
                             }
                         });
-                    
-                
                 });
             // API request for 5 day forecast
             fetch(searchURL)
@@ -108,13 +107,9 @@ $(document).ready(function() {
                     var humidText5 =  JSON.stringify(response.list[35].main.humidity);
                     $(".humidity5").text("Humid: " + humidText5 + " %");
                 }
+                localStorage.getItem("#user-input");
                 });
             
         })
     });
-          // save task to localStorage
-          $(".saveBtn").on("click", function () {
-          var text = $("#user-input").val(); 
-          localStorage.setItem(text);
-        });
-        $("#user-input").val(localStorage.getItem("#user-input"));
+  
