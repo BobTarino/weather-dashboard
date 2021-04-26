@@ -7,8 +7,8 @@ $(document).ready(function() {
         event.preventDefault();
         //grab value of input field
         var inputCity = $("#user-input").val(); 
-        var searchURL = "http://api.openweathermap.org/data/2.5/forecast?q=" + inputCity + "&units=imperial&appid=6658bc2aa5781c0084a75b25ca5febd7"
-        var currentURL = "http://api.openweathermap.org/data/2.5/weather?q=" + inputCity + "&units=imperial&appid=6658bc2aa5781c0084a75b25ca5febd7"
+        var searchURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + inputCity + "&units=imperial&appid=6658bc2aa5781c0084a75b25ca5febd7"
+        var currentURL = "https://api.openweathermap.org/data/2.5/weather?q=" + inputCity + "&units=imperial&appid=6658bc2aa5781c0084a75b25ca5febd7"
 
         // fetch data
         // API request for current weather
